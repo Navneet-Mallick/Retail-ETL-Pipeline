@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+  <rect width="1200" height="520" fill="#ffffff"/>
+  <text x="600" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#1f2937">
+    Retail Batch ETL Architecture
+  </text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0,0 10,4 0,8" fill="#4b5563"/>
+    </marker>
+  </defs>
+
+  <rect x="40" y="110" width="180" height="70" rx="8" fill="#e0f2fe" stroke="#0284c7"/>
+  <text x="130" y="145" text-anchor="middle" font-family="Arial" font-size="14" fill="#0c4a6e">CSV Source</text>
+  <text x="130" y="165" text-anchor="middle" font-family="Arial" font-size="12" fill="#0c4a6e">retail_sales_dataset.csv</text>
+
+  <rect x="260" y="110" width="170" height="70" rx="8" fill="#eef2ff" stroke="#4f46e5"/>
+  <text x="345" y="145" text-anchor="middle" font-family="Arial" font-size="14" fill="#312e81">Extract</text>
+  <text x="345" y="165" text-anchor="middle" font-family="Arial" font-size="12" fill="#312e81">extract.py</text>
+
+  <rect x="470" y="110" width="230" height="70" rx="8" fill="#ecfeff" stroke="#0891b2"/>
+  <text x="585" y="145" text-anchor="middle" font-family="Arial" font-size="14" fill="#164e63">Transform + Validation</text>
+  <text x="585" y="165" text-anchor="middle" font-family="Arial" font-size="12" fill="#164e63">transform.py</text>
+
+  <rect x="740" y="110" width="210" height="70" rx="8" fill="#f0fdf4" stroke="#16a34a"/>
+  <text x="845" y="145" text-anchor="middle" font-family="Arial" font-size="14" fill="#14532d">Incremental Filter</text>
+  <text x="845" y="165" text-anchor="middle" font-family="Arial" font-size="12" fill="#14532d">last_processed_date.txt</text>
+
+  <rect x="980" y="110" width="170" height="70" rx="8" fill="#fff7ed" stroke="#ea580c"/>
+  <text x="1065" y="145" text-anchor="middle" font-family="Arial" font-size="14" fill="#7c2d12">Load</text>
+  <text x="1065" y="165" text-anchor="middle" font-family="Arial" font-size="12" fill="#7c2d12">load.py</text>
+
+  <line x1="220" y1="145" x2="260" y2="145" stroke="#4b5563" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="430" y1="145" x2="470" y2="145" stroke="#4b5563" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="700" y1="145" x2="740" y2="145" stroke="#4b5563" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="950" y1="145" x2="980" y2="145" stroke="#4b5563" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <rect x="820" y="280" width="330" height="90" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="985" y="315" text-anchor="middle" font-family="Arial" font-size="14" fill="#1e3a8a">SQLite: retail.db</text>
+  <text x="985" y="337" text-anchor="middle" font-family="Arial" font-size="12" fill="#1e3a8a">sales_clean</text>
+  <text x="985" y="355" text-anchor="middle" font-family="Arial" font-size="12" fill="#1e3a8a">sales_summary</text>
+  <text x="985" y="373" text-anchor="middle" font-family="Arial" font-size="12" fill="#1e3a8a">sales_summary_history</text>
+
+  <rect x="430" y="280" width="320" height="90" rx="8" fill="#fef3c7" stroke="#d97706"/>
+  <text x="590" y="315" text-anchor="middle" font-family="Arial" font-size="14" fill="#78350f">CSV Outputs</text>
+  <text x="590" y="337" text-anchor="middle" font-family="Arial" font-size="12" fill="#78350f">output/sales_summary.csv</text>
+  <text x="590" y="355" text-anchor="middle" font-family="Arial" font-size="12" fill="#78350f">output/data_quality_report.csv</text>
+
+  <rect x="60" y="280" width="280" height="90" rx="8" fill="#f5f3ff" stroke="#7c3aed"/>
+  <text x="200" y="315" text-anchor="middle" font-family="Arial" font-size="14" fill="#4c1d95">Monitoring</text>
+  <text x="200" y="337" text-anchor="middle" font-family="Arial" font-size="12" fill="#4c1d95">logs/pipeline.log</text>
+
+  <line x1="1065" y1="180" x2="1065" y2="280" stroke="#4b5563" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="1020" y1="180" x2="650" y2="280" stroke="#4b5563" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="1000" y1="180" x2="240" y2="280" stroke="#4b5563" stroke-width="2.5" marker-end="url(#arrow)"/>
+</svg>

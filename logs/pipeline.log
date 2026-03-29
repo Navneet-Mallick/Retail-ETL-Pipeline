@@ -1,0 +1,3 @@
+2026-03-29 22:06:39,288 | INFO | Pipeline started.
+2026-03-29 22:06:39,489 | INFO | Pipeline success. records=821, latest_date=2024-01-01, dropped=209, time=0.20s
+2026-03-29 22:06:39,532 | INFO | Report generated: output\final.html

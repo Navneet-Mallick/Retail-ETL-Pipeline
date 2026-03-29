@@ -1,0 +1,2 @@
+total_rows_input,duplicate_rows_dropped,rows_dropped_null_required,rows_dropped_type_conversion,rows_dropped_business_rules,rows_output_clean,total_rows_dropped,run_timestamp
+1030,17,181,0,11,821,209,2026-03-29 22:06:39
